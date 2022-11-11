@@ -1,0 +1,540 @@
+*:not(.dark-mode-toggle) {
+  transition: all 3s;
+}
+
+#cloud1 {
+  -webkit-animation: cloud1 6s infinite;
+          animation: cloud1 6s infinite;
+}
+
+#cloud2 {
+  -webkit-animation: cloud2 6s infinite;
+          animation: cloud2 6s infinite;
+}
+
+#cloud3 {
+  -webkit-animation: cloud3 6s infinite;
+          animation: cloud3 6s infinite;
+}
+
+#cloud4 {
+  -webkit-animation: cloud4 6s infinite;
+          animation: cloud4 6s infinite;
+}
+
+#cloud5 {
+  -webkit-animation: cloud5 6s infinite;
+          animation: cloud5 6s infinite;
+}
+
+#cloud6 {
+  -webkit-animation: cloud6 6s infinite;
+          animation: cloud6 6s infinite;
+}
+
+@-webkit-keyframes cloud1 {
+  0% {
+    margin: -400px -300px;
+  }
+  50% {
+    margin: -400px -100px;
+  }
+  100% {
+    margin: -400px -300px;
+  }
+}
+
+@keyframes cloud1 {
+  0% {
+    margin: -400px -300px;
+  }
+  50% {
+    margin: -400px -100px;
+  }
+  100% {
+    margin: -400px -300px;
+  }
+}
+@-webkit-keyframes cloud2 {
+  0% {
+    margin: -430px -325px;
+  }
+  50% {
+    margin: -430px -125px;
+  }
+  100% {
+    margin: -430px -325px;
+  }
+}
+@keyframes cloud2 {
+  0% {
+    margin: -430px -325px;
+  }
+  50% {
+    margin: -430px -125px;
+  }
+  100% {
+    margin: -430px -325px;
+  }
+}
+@-webkit-keyframes cloud3 {
+  0% {
+    margin: -380px -375px;
+  }
+  50% {
+    margin: -380px -175px;
+  }
+  100% {
+    margin: -380px -375px;
+  }
+}
+@keyframes cloud3 {
+  0% {
+    margin: -380px -375px;
+  }
+  50% {
+    margin: -380px -175px;
+  }
+  100% {
+    margin: -380px -375px;
+  }
+}
+@-webkit-keyframes cloud4 {
+  0% {
+    margin: -200px 600px;
+  }
+  50% {
+    margin: -200px 400px;
+  }
+  100% {
+    margin: -200px 600px;
+  }
+}
+@keyframes cloud4 {
+  0% {
+    margin: -200px 600px;
+  }
+  50% {
+    margin: -200px 400px;
+  }
+  100% {
+    margin: -200px 600px;
+  }
+}
+@-webkit-keyframes cloud5 {
+  0% {
+    margin: -230px 675px;
+  }
+  50% {
+    margin: -230px 475px;
+  }
+  100% {
+    margin: -230px 675px;
+  }
+}
+@keyframes cloud5 {
+  0% {
+    margin: -230px 675px;
+  }
+  50% {
+    margin: -230px 475px;
+  }
+  100% {
+    margin: -230px 675px;
+  }
+}
+@-webkit-keyframes cloud6 {
+  0% {
+    margin: -180px 675px;
+  }
+  50% {
+    margin: -180px 475px;
+  }
+  100% {
+    margin: -180px 675px;
+  }
+}
+@keyframes cloud6 {
+  0% {
+    margin: -180px 675px;
+  }
+  50% {
+    margin: -180px 475px;
+  }
+  100% {
+    margin: -180px 675px;
+  }
+}
+@-webkit-keyframes sun-rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes sun-rotation {
+  to {
+    transform: rotate(360deg);
+  }
+}
+:root body {
+  background: #D6E5FA;
+}
+:root #cloud1, :root #cloud2, :root #cloud3, :root #cloud4, :root #cloud5, :root #cloud6 {
+  background: white;
+}
+:root .dark-mode-toggle, :root .dark-mode-toggle:before, :root .dark-mode-toggle:after {
+  background: #FFFFDE;
+}
+:root #circle {
+  background: #748DA6;
+}
+:root #house {
+  background: #B2C8DF;
+}
+:root #window {
+  background: linear-gradient(45deg, #D6E5FA, white);
+}
+:root #door {
+  background: #DAEAF1;
+}
+:root #roof {
+  border-bottom: 50px solid #748DA6;
+}
+:root #tree1, :root #tree3, :root #tree4 {
+  border-bottom: 120px solid #9CB4CC;
+}
+:root #tree2, :root #tree5 {
+  background: #F9CEEE;
+}
+:root #stump1, :root #stump2, :root #branch1, :root #branch2, :root #branch3 {
+  background: #FFE6E6;
+}
+:root body {
+  width: 100vw;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+:root #cloud1, :root #cloud2, :root #cloud3, :root #cloud4, :root #cloud5, :root #cloud6 {
+  position: absolute;
+  z-index: 1;
+}
+:root #house, :root #tree1, :root #tree2, :root #tree3, :root #tree4, :root #tree5 {
+  position: absolute;
+}
+:root .dark-mode-toggle {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  text-align: center;
+  margin: 45vh auto;
+  padding: 0 auto;
+  border: none;
+  -webkit-animation: sun-rotation 6s infinite;
+          animation: sun-rotation 6s infinite;
+}
+:root .dark-mode-toggle:before,
+:root .dark-mode-toggle:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 80px;
+  width: 80px;
+}
+:root .dark-mode-toggle:before {
+  transform: rotate(30deg);
+}
+:root .dark-mode-toggle:after {
+  transform: rotate(60deg);
+}
+:root .dark-mode-toggle:hover {
+  cursor: pointer;
+}
+:root #circle {
+  width: 500px;
+  height: 250px;
+  border-radius: 250px 250px 0 0;
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  margin-top: -100px; /* Negative half of height. */
+  margin-left: -250px; /* Negative half of width. */
+}
+:root #cloud1 {
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  margin: -400px -300px;
+}
+:root #cloud2 {
+  width: 150px;
+  height: 100px;
+  border-radius: 50px;
+  margin: -430px -325px;
+}
+:root #cloud3 {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  margin: -380px -375px;
+}
+:root #cloud4 {
+  width: 200px;
+  height: 70px;
+  border-radius: 50px;
+  margin: -200px 600px;
+}
+:root #cloud5 {
+  width: 150px;
+  height: 100px;
+  border-radius: 50px;
+  margin: -230px 675px;
+}
+:root #cloud6 {
+  width: 200px;
+  height: 50px;
+  border-radius: 50px;
+  margin: -180px 675px;
+}
+:root #house {
+  width: 100px;
+  height: 50px;
+  margin: -25px 200px;
+}
+:root #window {
+  width: 25px;
+  height: 25px;
+  margin: 12.5px 10px;
+}
+:root #door {
+  width: 25px;
+  height: 40px;
+  margin: -40px 60px;
+}
+:root #roof {
+  width: 0;
+  height: 0;
+  border-left: 60px solid transparent;
+  border-right: 60px solid transparent;
+  margin: -100px -10px;
+}
+:root #tree1 {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  margin: -50px 100px;
+}
+:root #stump1 {
+  width: 5px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 55px -2.5px;
+}
+:root #branch1 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0 5px;
+}
+:root #branch2 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  margin: 0 -5px;
+}
+:root #branch3 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0px 5px;
+}
+:root #tree2 {
+  width: 65px;
+  height: 120px;
+  border-radius: 60% 60% 60% 60%/80% 80% 40% 40%;
+  margin: -25px 350px;
+}
+:root #stump2 {
+  width: 5px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 55px auto;
+}
+:root #branch1 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0 5px;
+}
+:root #branch2 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  margin: 0 -5px;
+}
+:root #branch3 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0px 5px;
+}
+:root #tree3 {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  margin: 50px 420px;
+}
+:root #stump1 {
+  width: 5px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 55px -2.5px;
+}
+:root #branch1 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0 5px;
+}
+:root #branch2 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  margin: 0 -5px;
+}
+:root #branch3 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0px 5px;
+}
+:root #tree4 {
+  width: 0;
+  height: 0;
+  border-left: 35px solid transparent;
+  border-right: 35px solid transparent;
+  margin: 50px 0px;
+}
+:root #stump1 {
+  width: 5px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 55px -2.5px;
+}
+:root #branch1 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0 5px;
+}
+:root #branch2 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  margin: 0 -5px;
+}
+:root #branch3 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0px 5px;
+}
+:root #tree5 {
+  width: 65px;
+  height: 120px;
+  border-radius: 60% 60% 60% 60%/80% 80% 40% 40%;
+  margin: 75px 75px;
+}
+:root #stump2 {
+  width: 5px;
+  height: 90px;
+  border-radius: 50px;
+  margin: 55px auto;
+}
+:root #branch1 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0 5px;
+}
+:root #branch2 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(-45deg);
+  margin: 0 -5px;
+}
+:root #branch3 {
+  width: 5px;
+  height: 20px;
+  border-radius: 50px;
+  transform: rotate(45deg);
+  margin: 0px 5px;
+}
+
+.dark-mode {
+  background: #282D4F !important;
+}
+.dark-mode #cloud1, .dark-mode #cloud2, .dark-mode #cloud3, .dark-mode #cloud4, .dark-mode #cloud5, .dark-mode #cloud6 {
+  background: white;
+}
+.dark-mode .view {
+  color: #748DA6;
+}
+.dark-mode .dark-mode-toggle {
+  width: 77px;
+  height: 77px;
+  border-radius: 50%;
+  background-color: #FFFAD7;
+  border: none;
+  box-shadow: 0 0 40px 10px #FFFAD7;
+}
+.dark-mode .dark-mode-toggle:before, .dark-mode .dark-mode-toggle:after {
+  display: none;
+}
+.dark-mode #circle {
+  background: #404B69;
+}
+.dark-mode #house {
+  background: #BDBDD7;
+}
+.dark-mode #window {
+  width: 25px;
+  height: 25px;
+  background: #FFF6BF;
+  box-shadow: 0px 0px 20px 5px #FFF6BF;
+  margin: 12.5px 10px;
+}
+.dark-mode #door {
+  background: #283149;
+}
+.dark-mode #roof {
+  border-bottom: 50px solid #404B69;
+}
+.dark-mode #tree1, .dark-mode #tree3, .dark-mode #tree4 {
+  border-bottom: 120px solid #BDBDD7;
+}
+.dark-mode #tree2, .dark-mode #tree5 {
+  background: #834C69;
+}
+.dark-mode #stump1, .dark-mode #stump2, .dark-mode #branch1, .dark-mode #branch2, .dark-mode #branch3 {
+  background: #E6F5FF;
+}/*# sourceMappingURL=style.css.map */
